@@ -4,7 +4,7 @@
 LicorneLoader is a Garry's Mod loading screen.
 
 ---
-## [Demonstration](http://code.jquery.com/color/jquery.color-2.1.2.min.js)
+## [Demonstration](http://iklem.livehost.fr/licorneloader-demo/)
 
 ## Current version: 1.0
 

@@ -43,4 +43,6 @@ I'm a french guy who love to made web things free :)
 
 You can donate me if you want to help me in my work  [here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6) ;)
 
+You can go on my website (under construction and french site) [here](http://iklem.livehost.fr)
+
 I'll promise this script will not be a **paid script**

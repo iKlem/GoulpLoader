@@ -1,0 +1,197 @@
+/* 
+ *  This stylesheet can be modified, but you have to know the css language.
+ *  Main colors can be modified in the "user.css" file.. 
+ *
+ *  @author: iKlem <iklem.d@gmail.com>
+ *  @version: 1.0
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+/* MAIN CSS */
+body {
+    opacity: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color: #000000;
+}
+#break {
+    width: 0;
+    height: 0;
+    margin: 50px 0px 0px 0px;
+    font-size: 0;
+    clear: both;
+    
+}
+#noBorder {
+    border:0px;
+}
+/* --- */
+
+/* PROGRESS BARS */
+#loadBar {
+    width: 85%;
+    height: 20px;
+    padding: 4px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #939393;
+}
+    #loadBar::-webkit-progress-bar {    
+        border-radius: 10px;
+        background-color: #939393;
+    }
+    #loadBar::-webkit-progress-value {
+        border-radius: 10px;
+        background-color: black;
+    }
+#spinner {
+    width : 40px;
+    height : 40px;
+    margin: 15px auto;
+    border : 2px solid #5882FA;
+    border-left-color : transparent;
+    border-right-color : transparent;
+    border-radius : 50%;
+    animation : spin 2s infinite;
+    -webkit-animation : spin 2s infinite;
+}
+/* --- */
+
+/* LEFT PANEL */
+header {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    left: 1%;
+    width: 47%;
+    height: 484px;
+    box-shadow: 0px 0px 50px;
+    font-size: 20px;
+}
+    h1 {
+        margin: 0px;
+        height: 80px;
+        font-size: 2.5em;
+    }
+    #nbFiles, #stateLoad,  #gameMode, #map, #imgLeft, #imgLoad {
+        margin: 0;
+        height: 90px;
+        padding: 5px;
+        border-bottom: 1px solid #b8b8b8;
+        line-height: 90px;
+    }
+    #imgLeft, #imgLoad {
+        float: left;
+        width: 90px;
+        padding: 5px;
+        border-right: 1px solid #b8b8b8;
+    }
+    #stateLoad, #nbFiles {
+        font-weight: bold;
+        line-height: 40px;
+    }
+    #progressInfo, #progressInfoWS {
+        display: block;
+        text-align: right;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    #nbFiles {
+        border: none;
+    }
+/* --- */
+
+/* RIGHT PANELS*/
+#serverBanner, #serverInfo {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: 1.5%;
+    width: 630px;
+    height: 181px;
+    font-size: 20px;
+}
+    #serverBanner img {
+        width: 100%;
+        height: 181px;
+    }
+    #serverInfo {
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 0;
+        color: black;
+        font-size: 30px;
+        z-index: 1;
+    }
+
+#rules {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    width: 47%;
+    z-index: 2;
+    height: 280px;
+    background-color: white;
+    box-shadow: 0px 0px 50px black;
+    float: right;
+}
+    #rules h1 {
+        height: 60px;
+    }
+    #rules p {
+        font-size: 17px;
+        line-height: 25px;
+        margin: 10px;
+        text-align: left;
+    }
+/* --- */
+
+/* ANIMATION CSS*/
+.walk {
+    -webkit-animation-name: walk;
+    -webkit-animation-duration: 5.0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-perspective: 6000px;
+    text-align: center;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+    border: 2px solid #999;
+}
+
+@-webkit-keyframes walk {
+    0% 
+    {
+        -webkit-transform: rotateZ(0deg);
+    }
+
+    50% 
+    {
+        -webkit-transform: rotateZ(180deg);
+    }
+
+    100% 
+    {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform : rotate(0deg);}
+    50% {-webkit-transform : rotate(360deg);}
+    100% {-webkit-transform : rotate(0deg);}
+}
+
+@keyframes spin {
+    0% {transform : rotate(0deg);}
+    50% {transform : rotate(360deg);}
+    100% {transform : rotate(0deg);}
+}

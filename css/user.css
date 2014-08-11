@@ -1,0 +1,20 @@
+/*
+ *  @author: iKlem <iklem.d@gmail.com>
+ *  @version: 1.0
+ */
+
+/* Change the background image and color. */
+body {
+    background: #CCCCCC url("../img/bg.jpg");    
+}
+
+/* Change the background color of the left panel */
+header {
+    background: #FFFFFF;
+}
+
+/* Change the backgrounds color of the title "SERVER NAME" and "RULES" */
+h1, #player {
+    color: white;
+    background-color: #045FB4;
+}

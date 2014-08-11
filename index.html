@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+    -- Welcome to the main file of the LicorneLoader.
+    -- This HTML page is already filled with informations to know how to modify the file.
+    -- When you have finished, you can delete all these comment.
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- You can add the name of your server or you can remove and put your own title page -->
+        <title>LicorneLoader - Used by SERVER NAME</title>
+        <!-- Same thing for the description -->
+        <meta name="description" content="LicorneLoader - Used by SERVER NAME">
+        <!-- If you want to help me, do not modify this line. Thank you :) -->
+        <meta name="author" content="iKlem">
+        <!-- CSS - All stylesheets are loaded here. -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/user.css">
+        <!-- JAVASCRIPT - All script are loaded here too. -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/jqueryColor.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <!-- These name are temporary names. They will be modify with the script ("script.js" file) -->
+                <h1 id="servName">ServerName</h1>
+                <img id="imgLeft" src="img/gmod.png" /><h2 id="gameMode">Gamemode</h2>
+                <img id="imgLeft" src="img/map.png" /><h2 id="map">Mapname</h2>
+                <span id="imgLoad">
+                    <img id="noBorder" class="walk" src="img/gear.png" width="90px" />
+                </span>
+                <!-- The stateLoad will be modify too -->
+                <h2 id="stateLoad">Connexion...</h2>
+                <!-- You have all the informations when an action is sended. -->
+                <div id="nbFiles">
+                    <progress id="loadBar" value="0" max="100"><span>Loading...</span></progress>
+                    <div id="progressInfo"> - - - </div>
+                    <div id="progressInfoWS"> - - - </div>
+                </div>
+            </header>
+            <!-- This is your server Banner. The image have to be 630px by 181px. The "alt" value will be modified automatically-->
+            <div id="serverBanner">
+                <img src="" alt="EMPTY" />
+            </div>
+            <!-- Do not touch this conainer. This is the last information when you have "Sending Client Info" with the badass animation :P -->
+            <h1 id="serverInfo"></h1>
+            <!-- This is the rules. Modify all the text in capital letters -->
+            <div id="rules">
+                <h1>RULES</h1>
+                <p>
+                    HERE ARE ALL THE RULES YOU WANT TO SHOW FOR YOUR USERS.<br>
+                    THERE IS A LIMIT OF 8 LINES.<br>
+                    USER THE <b>&lt;br&gt;</b> TAG TO JUMP LINES.
+                </p>
+            </div>
+        </div>
+        <!-- This line is where the magic happend. DO NOT TOUCH THIS LINE !!! -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
+<!-- And this is the end of the file... I'm serious here ;) 
+    -- Thank you for use this Script loader for your Garry's Mod server.
+    -- Don't hesitate to make a donation on the Github Page : LIEN ICI
+-->

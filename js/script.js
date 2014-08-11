@@ -95,10 +95,8 @@ function RefreshFileBox() {
     }
 
     if(percentage <= 100 && percentage > 0 && percentage != value) {
-        console.log("BAR++");
         animationFunction = setInterval(function() { animationBar(); }, 10);
     } else {
-        console.log("CLEAR INTERVAL");
         clearInterval(animationFunction);
     }
 

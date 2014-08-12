@@ -37,7 +37,7 @@ LicorneLoader is a Garry's Mod loading screen.
 
 ---
 ## About this project
-This project was orginaly made for a private server. But I recently found a **"paid"** loading screen, and I think we don't need to pay for that kind of script. All servers can have a cool and hype loading screen withouth paying it. So i made one **free**.
+This project was orginaly made for a private server. I recently found a **"paid"** loading screen, and I think we don't need to pay for that kind of script. All servers can have a cool and hype loading screen withouth paying it. So i made one **free**.
 
 I'm a french guy who love to made web things free :)
 

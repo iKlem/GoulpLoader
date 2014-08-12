@@ -34,6 +34,7 @@ LicorneLoader is a Garry's Mod loading screen.
 * If you have problems to use the loading screen, you can send an issue, or send me an email to `iklem.d@gmail.com`
 * The wiki will be modified in the time, so if you think your problem can be in the wiki, wait a moment, or send a issue.
 * All other information can be found on the wiki.
+* Want to be informed about new update ? Clic on the **Watch** button at the top ;)
 
 ---
 ## About this project

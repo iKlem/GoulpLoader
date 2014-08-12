@@ -17,7 +17,7 @@ LicorneLoader is a Garry's Mod loading screen.
 * Custom background and colors.
 * Loading bar.
 * Animated.
-* Use of [JQuery](http://jquery.com/), [Jquery UI](http://jqueryui.com/) and [Jquery Colors](https://github.com/jquery/jquery-color) plugins
+* Use of [JQuery](http://jquery.com/), [Jquery UI](http://jqueryui.com/) and [Jquery Color](https://github.com/jquery/jquery-color) plugins
 
 
 ---

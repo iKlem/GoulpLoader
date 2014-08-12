@@ -13,7 +13,7 @@ LicorneLoader is a Garry's Mod loading screen.
 * Server informations with gamemode, maps and the name.
 * Show all actions and files to be or downloaded.
 * Panel for your rules.
-* Add your Server Banner (See Server Banner Wiki to add your banner)
+* Add your Server Banner (See Server Banner Wiki to add your banner | !!! UNDER CONSTRUCTION !!!)
 * Custom background and colors.
 * Loading bar.
 * Animated.

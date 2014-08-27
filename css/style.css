@@ -30,14 +30,22 @@ body {
 
 /* PROGRESS BARS */
 #loadBar {
+    position: relative;
+    content: "";
     width: 85%;
-    height: 20px;
-    padding: 4px;
+    height: 8px;
+    margin: 13px auto;
     border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #939393;
 }
+    #loadBar-width {
+        position: absolute;
+        content: "";
+        top: 0px;
+        width: 0%;
+        height: 8px;
+        border-radius: 10px;
+        visibility: hidden;
+    }
     #loadBar::-webkit-progress-bar {    
         border-radius: 10px;
         background-color: #939393;
@@ -66,7 +74,7 @@ header {
     top: 10%;
     left: 1%;
     width: 47%;
-    height: 484px;
+    height: 490px;
     box-shadow: 0px 0px 50px;
     font-size: 20px;
 }

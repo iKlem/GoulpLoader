@@ -4,7 +4,7 @@
 LicorneLoader is a Garry's Mod loading screen.
 
 ---
-## Current version: 1.0.3
+## Current version: 1.0.4
 ## [Download Latest] (https://github.com/iKlem/LicorneLoader/releases/latest)
 ## [Demonstration](http://iklem.livehost.fr/licorneloader-demo/)
 

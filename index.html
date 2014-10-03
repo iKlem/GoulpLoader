@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <!--
--- Welcome to the main file of the LicorneLoader.
--- This HTML page is already filled with informations to know how to modify the file.
--- When you have finished, you can delete all these comment.
+  Welcome to the main file of the LicorneLoader.
+  This HTML page is already filled with informations to know how to modify the file.
+  When you have finished, you can delete all these comment.
 -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <!-- You can add the name of your server or you can remove and put your own title page -->
-        <title>LicorneLoader - Used by SERVER NAME</title>
-        <!-- Same thing for the description -->
-        <meta name="description" content="LicorneLoader - Used by SERVER NAME">
-        <!-- If you want to help me, do not modify this line. Thank you :) -->
-        <meta name="author" content="iKlem">
-        <!-- CSS - All stylesheets are loaded here. -->
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/user.css">
-        <!-- JQUERY SCRIPTS - All Jquery script are loaded here too. -->
-        <script type="text/javascript" src="js/jQuery.js"></script>
-        <script type="text/javascript" src="js/jQueryColor.js"></script>
-        <script type="text/javascript" src="js/jQueryUI.js"></script>
-    </head>
-    <body>
-        <div id="container">
-            <header>
-                <!-- These name are temporary names. They will be modify with the script ("script.js" file) -->
-                <h1 id="servName">ServerName</h1>
-                <svg class='gmodImg' id="imgLeft" width="90px" height="90px" viewBox="0 0 90 90">
-                    <path id="square" fill="none" stroke="black" stroke-width="1" d="M 4.50,4.53 C 4.50,4.53 85.47,4.56 85.47,4.56 85.47,4.56 85.47,86.50 85.47,86.50 85.47,86.50 4.47,86.34 4.47,86.34 4.47,86.34 4.50,4.53 4.50,4.53 Z" />
-                    <path id="G" fill="none" stroke="black" stroke-width="1" d="M 44.00,58.98 C 27.29,59.40 21.67,48.03 22.01,33.00 22.11,29.03 22.69,25.65 24.35,22.00 28.42,13.08 39.40,7.12 49.00,11.01 51.84,12.16 53.76,14.00 56.00,16.00 56.00,16.00 56.00,11.00 56.00,11.00 56.00,11.00 68.00,11.00 68.00,11.00 68.00,11.00 68.00,61.00 68.00,61.00 67.96,64.23 67.86,67.01 66.43,70.00 58.74,86.11 24.32,87.50 22.00,62.00 22.00,62.00 32.91,62.13 32.91,62.13 33.87,72.48 48.02,74.39 53.65,67.74 56.80,64.03 56.00,58.52 56.00,54.00 51.57,57.58 49.81,58.84 44.00,58.98 Z M 37.51,24.13 C 32.94,29.80 32.99,51.87 47.00,49.76 60.27,47.76 61.25,19.80 44.00,20.38 41.12,21.17 39.49,21.67 37.51,24.13 Z" />
-                </svg><h2 id="gameMode">Gamemode</h2>
-                <img id="imgLeft" src="img/map.png" /><h2 id="map">Mapname</h2>
-                <span id="imgLoad">
-                    <img id="noBorder" class="walk" src="img/gear.png" width="90px" />
-                </span>
-                <!-- The stateLoad will be modify too -->
-                <h2 id="stateLoad">Connexion...</h2>
-                <!-- You have all the informations when an action is sended. -->
-                <div id="nbFiles">
-                    <div id="loadBar"><div id="loadBar-width"></div></div>
-                    <div id="progressInfo"> - - - </div>
-                    <div id="progressInfoWS"> - - - </div>
-                </div>
-            </header>
-            <!-- This is your server Banner. The image have to be 630px by 181px. The "alt" value will be modified automatically-->
-            <div id="serverBanner">
-                <img src="" alt="EMPTY" />
-            </div>
-            <!-- Do not touch this conainer. This is the last information when you have "Sending Client Info" with the badass animation :P -->
-            <h1 id="serverInfo"></h1>
-            <!-- This is the rules. Modify all the text in capital letters -->
-            <div id="rules">
-                <h1>RULES</h1>
-                <p>
-                    HERE ARE ALL THE RULES YOU WANT TO SHOW FOR YOUR USERS.<br>
-                    THERE IS A LIMIT OF 8 LINES.<br>
-                    USER THE <b>&lt;br&gt;</b> TAG TO JUMP LINES.
-                </p>
-            </div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Your server name will be added automatically. You can configure the name in the "config.json" file -->
+    <title>GoulpLoader - Used by </title>
+    <!-- Same thing for the description -->
+    <meta name="description" content="GoulpLoader - Used by ">
+    <!-- If you want to help me, do not modify this line. Thank you :) -->
+    <meta name="author" content="iKlem">
+    <!-- CSS - All stylesheets are loaded here. -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="user.css">
+    <!-- JQUERY SCRIPTS - All Jquery script are loaded here too. -->
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/jQueryColor.js"></script>
+    <script type="text/javascript" src="js/jQueryUI.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="servName">ServerName</h1>
+        <svg class='gmodImg' id="imgLeft" width="90px" height="90px" viewBox="0 0 90 90">
+          <path id="square" fill="none" stroke="none" stroke-width="1" d="M 4.50,4.53 C 4.50,4.53 85.47,4.56 85.47,4.56 85.47,4.56 85.47,86.50 85.47,86.50 85.47,86.50 4.47,86.34 4.47,86.34 4.47,86.34 4.50,4.53 4.50,4.53 Z" />
+          <path id="G" fill="none" stroke="black" stroke-width="1" d="M 44.00,58.98 C 27.29,59.40 21.67,48.03 22.01,33.00 22.11,29.03 22.69,25.65 24.35,22.00 28.42,13.08 39.40,7.12 49.00,11.01 51.84,12.16 53.76,14.00 56.00,16.00 56.00,16.00 56.00,11.00 56.00,11.00 56.00,11.00 68.00,11.00 68.00,11.00 68.00,11.00 68.00,61.00 68.00,61.00 67.96,64.23 67.86,67.01 66.43,70.00 58.74,86.11 24.32,87.50 22.00,62.00 22.00,62.00 32.91,62.13 32.91,62.13 33.87,72.48 48.02,74.39 53.65,67.74 56.80,64.03 56.00,58.52 56.00,54.00 51.57,57.58 49.81,58.84 44.00,58.98 Z M 37.51,24.13 C 32.94,29.80 32.99,51.87 47.00,49.76 60.27,47.76 61.25,19.80 44.00,20.38 41.12,21.17 39.49,21.67 37.51,24.13 Z" />
+        </svg><h2 id="gameMode">Gamemode</h2>
+        <img id="imgLeft" src="img/map.png" /><h2 id="map">Mapname</h2>
+        <span id="imgLoad">
+          <img id="noBorder" class="walk" src="img/gear.png" width="90px" />
+        </span>
+        <!-- The stateLoad will be modify too -->
+        <h2 id="stateLoad">Connexion...</h2>
+        <!-- You have all the informations when an action is sended. -->
+        <div id="nbFiles">
+          <div id="loadBar"><div id="loadBar-width"></div></div>
+          <div id="progressInfo"> - - - </div>
+          <div id="progressInfoWS"> - - - </div>
         </div>
-        <!-- This line is where the magic happend. DO NOT TOUCH THIS LINE !!! -->
-        <script type="text/javascript" src="js/script.js"></script>
-    </body>
+      </header>
+      <!--
+        This is your server Banner. The image have to be 630px by 181px. The "alt" value will be modified automatically
+        You need to open config.json to add your banner
+      -->
+      <div id="serverBanner">
+        <img src="" alt="EMPTY" />
+      </div>
+      <!-- Do not touch this conainer. This is the last information when you have "Sending Client Info" with the badass animation :P -->
+      <h1 id="serverInfo"></h1>
+      <!-- This is the rules. Modify all the text in capital letters -->
+      <div id="rules">
+        <h1>RULES</h1>
+        <p></p>
+      </div>
+    </div>
+    <!-- This line is where the magic happend. DO NOT TOUCH THESE LINES !!! -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/loadConfig.js"></script>
+  </body>
 </html>
-<!-- And this is the end of the file... I'm serious here ;) 
--- Thank you for use this Script loader for your Garry's Mod server.
--- Don't hesitate to make a donation on the Github Page : LIEN ICI
+<!--
+  And this is the end of the file... I'm serious here ;)
+  Thank you for using this Script loader for your Garry's Mod server.
+  Don't hesitate to make a donation on the Github Page.
 -->

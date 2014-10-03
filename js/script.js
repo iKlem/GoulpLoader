@@ -3,7 +3,7 @@
  *  This file is important for the script to work.
  *
  *  @author: iKlem <iklem.d@gmail.com>
- *  @version: 1.0
+ *  @version: 1.1
  */
 
 //Number of files to download
@@ -47,7 +47,7 @@ function RefreshFileBox() {
         if(percentage == 100 || (filesDL == filesNeeded)) {
             $("#progressInfoWS").html("Done !");
             $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
-        } else { 
+        } else {
             $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
         }
     }
@@ -82,9 +82,9 @@ function DownloadingFile(fileName) {
     var splitSTR = fileName.split(" ");
     for (var i = 0; i<splitSTR.length; i++) {
         if(splitSTR[i] == "Workshop") {
-            $("#progressInfoWS").html("Download addon from Workshop...");    
+            $("#progressInfoWS").html("Download addon from Workshop...");
         } else {
-            $("#progressInfoWS").html(" - - - ");    
+            $("#progressInfoWS").html(" - - - ");
         }
     }
     RefreshFileBox();
@@ -128,10 +128,7 @@ function animationBar() {
 //Animate the panels when the message "Sending Clien Info" is sended.
 function animateFinal() {
     $("header").animate({left:"-55%"}, 500, "easeOutExpo");
-
-    $("#rules").animate({right:"-55%"}, 500, "easeOutExpo", function() {
-        $(this).remove();
-    });
+    $("#rules").animate({right:"-55%"}, 500, "easeOutExpo");
     $("#serverBanner, #serverInfo").animate({right:"25%"}, 500, "easeOutExpo", function() {
         $("#serverBanner").animate({top:"15%"}, 500, "easeOutExpo");
         $("#serverInfo").animate({opacity:1, top:"45%"}, 500, "easeOutExpo");

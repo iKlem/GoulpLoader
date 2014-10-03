@@ -5,7 +5,7 @@
 
 /* Change the background image and color. */
 body {
-    background: #CCCCCC url("../img/bg.jpg");    
+    background: #CCCCCC url("img/bg.jpg");
 }
 
 /* Change the background color of the left panel */
@@ -26,11 +26,20 @@ h1, #player {
     stroke-width: 1px;
 }
 
-/* SVG COLORATION - Gmod logo */
-#square {
-    fill: #045FB4; 
+/* SVG COLORATION - Gmod logo
+ * Uncomment what you need and don't forget to comment the other one
+ */
+/* With stroke */
+/*#square {
+    fill: #045FB4;
     stroke: black;
     stroke-width: 1px;
+}*/
+/* Without stroke */
+#square {
+    fill: #045FB4;
+    stroke: none;
+    stroke-width: 0px;
 }
 
 #G {

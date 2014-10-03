@@ -120,7 +120,6 @@ function animationBar() {
     if(percentage > value) {
         value += 1;
         progressbar.width(value+"%");
-        $("#rules").html(value+"%");
     } else if (percentage == 100) {
         $("#loadBar-width").animate({backgroundColor:"green"}, 500, "easeOutExpo");
     }

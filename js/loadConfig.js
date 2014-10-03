@@ -3,9 +3,10 @@
  *  DON'T MODIFY THIS FILE UNLESS YOU KNOW WHAT ARE YOU DOING
  *
  *  @author: iKlem <iklem.d@gmail.com>
- *  @version: 1.0
+ *  @version: 1.0.1
  */
-$.ajax('config.json').done(function (data) {
+ 
+ $.getJSON('./config.json', function (data) {
   $("title").append(data.server.name);
   $("#serverBanner img").attr("src", data.server.banner);
   $("#serverBanner img").attr("alt", data.server.banner);

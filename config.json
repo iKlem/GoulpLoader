@@ -6,6 +6,6 @@
     "rules": [
       {"line" : "HERE ARE ALL THE RULES YOU WANT TO SHOW FOR YOUR USERS."},
       {"line" : "THERE IS A LIMIT OF 8 LINES."},
-      {"line" : "USER THE <b>&lt;br&gt;</b> TAG TO JUMP LINES."}
+      {"line" : "DON'T USE THE <b>&lt;br&gt;</b> TAG TO JUMP LINES. IT WILL BE AUTOMATIC !!!"}
     ]
 }

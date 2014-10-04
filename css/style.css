@@ -111,7 +111,7 @@ h1 {
 }
 #nbFiles, #stateLoad,  #gameMode, #map, #imgLeft, #imgLoad {
   margin: 0;
-  height: 80px;
+  height: 90px;
   padding: 5px;
   border-bottom: 1px solid #b8b8b8;
   line-height: 90px;

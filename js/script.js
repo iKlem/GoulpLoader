@@ -129,8 +129,8 @@ function animateFinal() {
   $("#leftPanel").animate({left:"-55%"}, 500, "easeOutExpo");
   $("#rules").animate({left:"75vw"}, 500, "easeOutExpo");
   $("#rightPanel").animate({right:"25%"}, 500, "easeOutExpo", function() {
-    $("#serverBanner").animate({top:"15%"}, 500, "easeOutExpo");
-    $("#serverInfo").animate({opacity:"0.8", top:"40%"}, 500, "easeOutExpo");
+    $("#serverBanner").animate({top:"20px"}, 500, "easeOutExpo");
+    $("#serverInfo").animate({opacity:"0.8", top:"45%"}, 500, "easeOutExpo");
   });
   clearInterval(animationFunction);
 }

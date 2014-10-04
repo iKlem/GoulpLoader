@@ -28,7 +28,7 @@ $.getJSON('./config.json', function (data) {
     if(music.title != "") {
       $("#musicTitle").append(music.title);
     } else {
-      $("#musicContainer").css("background-color", "transparent");  
+      $("#musicContainer").css("background-color", "transparent");
     }
     $("#musicPlayer").attr("src", music.file);
     musicPlayer.volume = music.volume;

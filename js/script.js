@@ -100,7 +100,7 @@ function SetStatusChanged(status) {
   for (var i = 0; i < statusSTR.length; i++) {
     if(statusSTR[i] == "Sending") {
       percentage = 100;
-      setTimeout(function() { animateFinal(); $("#serverInfo").html(status + "<br><div id='spinner'></div>"); }, 1000);
+      setTimeout(function() { animateFinal(); $("#serverInfo").html("<div id='status'>" + status + "<br><div id='spinner'></div></div>"); }, 1000);
     }
   }
   $("#stateLoad").html(status);

@@ -15,6 +15,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   color: #000000;
+  overflow: hidden;
 }
 #break {
   width: 0;
@@ -27,11 +28,20 @@ body {
 #noBorder {
   border:0px;
 }
+#container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 5%;
+}
 #versionNo {
   position: relative;
   text-align: left;
-  left: 5px;
-  bottom: 20px;
+  margin-left: 10px;
+  font-weight: bold;
 }
 /* --- */
 
@@ -75,22 +85,24 @@ body {
 }
 #status {
   background-color: white;
-  opacity: 0.85;
   padding: 5px;
   border-radius: 10px;
 }
 /* --- */
 
-/* LEFT PANEL */
-header {
-  position: absolute;
+/* BOTH PANELS */
+#leftPanel, #rightPanel {
+  position: relative;
   z-index: 2;
-  top: 10%;
-  left: 1%;
   width: 47%;
-  height: 490px;
-  box-shadow: 0px 0px 50px;
+  margin: 2%;
+}
+
+/* LEFT PANEL */
+#leftPanel {
+  box-shadow: 4px 4px 15px #6e6e6e;
   font-size: 20px;
+  background-color: white;
 }
 h1 {
   margin: 0px;
@@ -99,7 +111,7 @@ h1 {
 }
 #nbFiles, #stateLoad,  #gameMode, #map, #imgLeft, #imgLoad {
   margin: 0;
-  height: 90px;
+  height: 80px;
   padding: 5px;
   border-bottom: 1px solid #b8b8b8;
   line-height: 90px;
@@ -126,12 +138,17 @@ h1 {
 /* --- */
 
 /* RIGHT PANELS*/
+#rightPanel {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 #serverBanner, #serverInfo {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 10%;
-  right: 1.50%;
-  width: 46%;
   height: 181px;
   font-size: 20px;
 }
@@ -141,8 +158,9 @@ h1 {
 }
 #serverInfo {
   position: absolute;
-  top: 10%;
-  right: 1%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
   background-color: transparent;
   box-shadow: none;
   opacity: 0;
@@ -152,16 +170,15 @@ h1 {
 }
 
 #rules {
-  position: absolute;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  position: relative;
   z-index: 2;
-  top: 40%;
-  right: 1%;
-  width: 47%;
-  z-index: 2;
+  width: 100%;
   height: 280px;
   background-color: white;
-  box-shadow: 0px 0px 50px black;
-  float: right;
+  box-shadow: 4px 4px 15px #6e6e6e;
 }
 #rules h1 {
   height: 60px;
@@ -172,6 +189,7 @@ h1 {
   margin: 10px;
   text-align: left;
 }
+
 #musicContainer, #musicPlayer, #musicTitle {
   margin: 0px;
   padding: 2px;

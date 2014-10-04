@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-  Welcome to the main file of the LicorneLoader.
-  This HTML page is already filled with informations to know how to modify the file.
-  When you have finished, you can delete all these comment.
--->
+<!-- Welcome to the main file of the LicorneLoader. This HTML page is already filled with informations to know how to modify the file. When you have finished, you can delete all these comment. -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -26,7 +22,7 @@
   </head>
   <body>
     <div id="container">
-      <header>
+      <div id="leftPanel">
         <h1 id="servName">ServerName</h1>
         <svg class='gmodImg' id="imgLeft" width="90px" height="90px" viewBox="0 0 90 90">
           <path id="square" fill="none" stroke="none" stroke-width="1" d="M 4.50,4.53 C 4.50,4.53 85.47,4.56 85.47,4.56 85.47,4.56 85.47,86.50 85.47,86.50 85.47,86.50 4.47,86.34 4.47,86.34 4.47,86.34 4.50,4.53 4.50,4.53 Z" />
@@ -45,20 +41,19 @@
           <div id="progressInfoWS"> - - - </div>
         </div>
         <div id="versionNo">v1.0.6c</div>
-      </header>
-      <!--
-        This is your server Banner. The image have to be 630px by 181px. The "alt" value will be modified automatically
-        You need to open config.json to add your banner
-      -->
-      <div id="serverBanner">
-        <img src="" alt="EMPTY" />
       </div>
-      <!-- Do not touch this conainer. This is the last information when you have "Sending Client Info" with the badass animation :P -->
-      <h1 id="serverInfo"></h1>
-      <!-- This is the rules. Modify all the text in capital letters -->
-      <div id="rules">
-        <h1>RULES</h1>
-        <p></p>
+      <div id="rightPanel">
+        <!-- This is your server Banner. The image have to be 630px by 181px. The "alt" value will be modified automatically You need to open config.json to add your banner -->
+        <div id="serverBanner">
+          <img src="" alt="EMPTY" />
+        </div>
+        <!-- Do not touch this conainer. This is the last information when you have "Sending Client Info" with the badass animation :P -->
+        <h1 id="serverInfo"></h1>
+        <!-- This is the rules. Modify all the text in capital letters -->
+        <div id="rules">
+          <h1>RULES</h1>
+          <p></p>
+        </div>
       </div>
     </div>
     <!-- Yay ! The slideshow and the music plugins are here !!! More on the wiki (https://github.com/Licorne-team/GoulpLoader/wiki)-->
@@ -72,8 +67,4 @@
     <script type="text/javascript" src="js/loadConfig.js"></script>
   </body>
 </html>
-<!--
-  And this is the end of the file... I'm serious here ;)
-  Thank you for using this Script loader for your Garry's Mod server.
-  Don't hesitate to make a donation on the Github Page.
--->
+<!-- And this is the end of the file... I'm serious here ;) Thank you for using this Script loader for your Garry's Mod server.Don't hesitate to make a donation on the Github Page. -->

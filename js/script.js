@@ -46,9 +46,9 @@ function RefreshFileBox() {
   if(filesNeeded > 0) {
     if(percentage == 100 || (filesDL == filesNeeded)) {
       $("#progressInfoWS").html("Done !");
-      $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
+      $("#progressInfo").html("Files downloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
     } else {
-      $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
+      $("#progressInfo").html("Files downloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
     }
   }
 }
@@ -126,11 +126,11 @@ function animationBar() {
 }
 //Animate the panels when the message "Sending Clien Info" is sended.
 function animateFinal() {
-  $("header").animate({left:"-55%"}, 500, "easeOutExpo");
-  $("#rules").animate({right:"-55%"}, 500, "easeOutExpo");
-  $("#serverBanner, #serverInfo").animate({right:"25%"}, 500, "easeOutExpo", function() {
+  $("#leftPanel").animate({left:"-55%"}, 500, "easeOutExpo");
+  $("#rules").animate({left:"75vw"}, 500, "easeOutExpo");
+  $("#rightPanel").animate({right:"25%"}, 500, "easeOutExpo", function() {
     $("#serverBanner").animate({top:"15%"}, 500, "easeOutExpo");
-    $("#serverInfo").animate({opacity:1, top:"45%"}, 500, "easeOutExpo");
+    $("#serverInfo").animate({opacity:"0.8", top:"40%"}, 500, "easeOutExpo");
   });
   clearInterval(animationFunction);
 }

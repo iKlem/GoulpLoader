@@ -8,6 +8,7 @@ GoulpLoader is a Garry's Mod loading screen.
 ## [Download Latest] (https://github.com/iKlem/GoulpLoader/releases/latest)
 ## [Demonstration](http://iklem.livehost.fr/goulploader-demo/)
 
+
 ---
 ## Features
 * Server informations with gamemode, maps and the name.
@@ -17,11 +18,14 @@ GoulpLoader is a Garry's Mod loading screen.
 * Custom background and colors.
 * Loading bar.
 * Animated.
-* Use of [JQuery](http://jquery.com/), [Jquery UI](http://jqueryui.com/) and [Jquery Color](https://github.com/jquery/jquery-color) plugins
+* __NEW__ Slideshow !
+* __NEW__ Music Player !
+* __NEW__ New easy way to configure the loader - With JSON !
+* Use of [JQuery](http://jquery.com/), [Jquery UI](http://jqueryui.com/), [Jquery Color](https://github.com/jquery/jquery-color) and [ResponsiveSlides](http://responsiveslides.com/) plugins
 
 
 ---
-## Installation
+## Installation (Or go see the [Wiki](https://github.com/Licorne-team/GoulpLoader/wiki))
 * Add all theses files in a webserver.
 * In your Garry's mod server, go to your cfg folder, and open "server.cfg"
 * Add this line `sv_loadingurl "http://yourwebserver.something/if_you_have_put_a_folder"`

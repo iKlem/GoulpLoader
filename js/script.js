@@ -1,10 +1,10 @@
 /*
- *  DO NOT MODIFY THIS FILE UNLESS IF YOU KNOW WHAT ARE YOU DOING !!!
- *  This file is important for the script to work.
- *
- *  @author: iKlem <iklem.d@gmail.com>
- *  @version: 1.1
- */
+*  DO NOT MODIFY THIS FILE UNLESS IF YOU KNOW WHAT ARE YOU DOING !!!
+*  This file is important for the script to work.
+*
+*  @author: iKlem <iklem.d@gmail.com>
+*  @version: 1.1
+*/
 
 //Number of files to download
 var filesNeeded = 0;
@@ -18,8 +18,8 @@ var isDownload = false;
 var percentage = 0;
 //Get the progress bar values and the element itself.
 var progressbar = $('#loadBar-width'),
-    max = percentage,
-    value = 0;
+max = percentage,
+value = 0;
 //Value for the interval clearing function.
 var animationFunction;
 var isAnimate = false;
@@ -33,104 +33,104 @@ var dlFile = "<svg class='dlImg' xmlns='http://www.w3.org/2000/svg' width='90px'
 
 //Update of all elements in the page
 function RefreshFileBox() {
-    if(percentage < 100 || (filesDL == filesNeeded)) {
-        percentage = Math.floor((100 / filesNeeded) * filesDL);
-    }
+  if(percentage < 100 || (filesDL == filesNeeded)) {
+    percentage = Math.floor((100 / filesNeeded) * filesDL);
+  }
 
-    if(isAnimate) {
-        animationFunction = setInterval(animationBar, 15);
+  if(isAnimate) {
+    animationFunction = setInterval(animationBar, 15);
+  } else {
+    clearInterval(animationFunction);
+  }
+
+  if(filesNeeded > 0) {
+    if(percentage == 100 || (filesDL == filesNeeded)) {
+      $("#progressInfoWS").html("Done !");
+      $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
     } else {
-        clearInterval(animationFunction);
+      $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
     }
-
-    if(filesNeeded > 0) {
-        if(percentage == 100 || (filesDL == filesNeeded)) {
-            $("#progressInfoWS").html("Done !");
-            $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
-        } else {
-            $("#progressInfo").html("Files donwloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
-        }
-    }
+  }
 }
 //Animation when page is loaded.
 $("body").ready(function() {
-    $("body").animate({opacity: 1, marginTop: "0px"}, 500);
+  $("body").animate({opacity: 1, marginTop: "0px"}, 500);
 });
 // Called when the number of files to download changes.
 function SetFilesNeeded(needed) {
-    filesNeeded = needed;
-    RefreshFileBox();
+  filesNeeded = needed;
+  RefreshFileBox();
 }
 // Called at the start, tells us how many files need to be downloaded in total.
 function SetFilesTotal(total) {
-    filesTotal = total;
-    RefreshFileBox();
+  filesTotal = total;
+  RefreshFileBox();
 }
 // Called when a file starts downloading. The filename includes the entire path of the file;
 // for example "materials/models/bobsModels/car.mdl".
 function DownloadingFile(fileName) {
-    if(isDownload) {
-        filesDL++;
-        isDownload = false;
-        isAnimate = true;
+  if(isDownload) {
+    filesDL++;
+    isDownload = false;
+    isAnimate = true;
+  }
+  $("#loadBar-width").css({"visibility": "visible"});
+  isDownload = true;
+  $("#stateLoad").html("Downloading " + fileName);
+  $("#imgLoad").html(dlFile);
+  $("#noBorder").attr("class", "NOPE");
+  var splitSTR = fileName.split(" ");
+  for (var i = 0; i<splitSTR.length; i++) {
+    if(splitSTR[i] == "Workshop") {
+      $("#progressInfoWS").html("Download addon from Workshop...");
+    } else {
+      $("#progressInfoWS").html(" - - - ");
     }
-    $("#loadBar-width").css({"visibility": "visible"});
-    isDownload = true;
-    $("#stateLoad").html("Downloading " + fileName);
-    $("#imgLoad").html(dlFile);
-    $("#noBorder").attr("class", "NOPE");
-    var splitSTR = fileName.split(" ");
-    for (var i = 0; i<splitSTR.length; i++) {
-        if(splitSTR[i] == "Workshop") {
-            $("#progressInfoWS").html("Download addon from Workshop...");
-        } else {
-            $("#progressInfoWS").html(" - - - ");
-        }
-    }
-    RefreshFileBox();
+  }
+  RefreshFileBox();
 }
 // Called when something happens. This might be "Initialising Game Data", "Sending Client Info", etc.
 function SetStatusChanged(status) {
-    if(isDownload) {
-        filesDL++;
-        isDownload = false;
-        isAnimate = true;
+  if(isDownload) {
+    filesDL++;
+    isDownload = false;
+    isAnimate = true;
+  }
+  var statusSTR = status.split(" ");
+  for (var i = 0; i < statusSTR.length; i++) {
+    if(statusSTR[i] == "Sending") {
+      percentage = 100;
+      setTimeout(function() { animateFinal(); $("#serverInfo").html(status + "<br><div id='spinner'></div>"); }, 1000);
     }
-    var statusSTR = status.split(" ");
-    for (var i = 0; i < statusSTR.length; i++) {
-        if(statusSTR[i] == "Sending") {
-            percentage = 100;
-            setTimeout(function() { animateFinal(); $("#serverInfo").html(status + "<br><div id='spinner'></div>"); }, 1000);
-        }
-    }
-    $("#stateLoad").html(status);
-    $("#noBorder").attr("src", "./img/gear.png");
-    $("#noBorder").attr("class", "walk");
-    RefreshFileBox();
+  }
+  $("#stateLoad").html(status);
+  $("#noBorder").attr("src", "./img/gear.png");
+  $("#noBorder").attr("class", "walk");
+  RefreshFileBox();
 }
 // Called when the loading screen finishes loading all assets.
 function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemode) {
-    $("#servName").html(servername);
-    $("#gameMode").html(gamemode);
-    $("#map").html(mapname);
-    $("#serverBanner img").attr("alt", servername + " - IMAGE MISSING");
+  $("#servName").html(servername);
+  $("#gameMode").html(gamemode);
+  $("#map").html(mapname);
+  $("#serverBanner img").attr("alt", servername + " - IMAGE MISSING");
 }
 // Animate the progress of the Progress bar.
 function animationBar() {
-    if(percentage > value) {
-        value += 1;
-        progressbar.width(value+"%");
-    } else if (percentage == 100) {
-        $("#loadBar-width").animate({backgroundColor:"green"}, 500, "easeOutExpo");
-    }
+  if(percentage > value) {
+    value += 1;
+    progressbar.width(value+"%");
+  } else if (percentage == 100) {
+    $("#loadBar-width").animate({backgroundColor:"green"}, 500, "easeOutExpo");
+  }
 }
 //Animate the panels when the message "Sending Clien Info" is sended.
 function animateFinal() {
-    $("header").animate({left:"-55%"}, 500, "easeOutExpo");
-    $("#rules").animate({right:"-55%"}, 500, "easeOutExpo");
-    $("#serverBanner, #serverInfo").animate({right:"25%"}, 500, "easeOutExpo", function() {
-        $("#serverBanner").animate({top:"15%"}, 500, "easeOutExpo");
-        $("#serverInfo").animate({opacity:1, top:"45%"}, 500, "easeOutExpo");
-    });
-    clearInterval(animationFunction);
+  $("header").animate({left:"-55%"}, 500, "easeOutExpo");
+  $("#rules").animate({right:"-55%"}, 500, "easeOutExpo");
+  $("#serverBanner, #serverInfo").animate({right:"25%"}, 500, "easeOutExpo", function() {
+    $("#serverBanner").animate({top:"15%"}, 500, "easeOutExpo");
+    $("#serverInfo").animate({opacity:1, top:"45%"}, 500, "easeOutExpo");
+  });
+  clearInterval(animationFunction);
 }

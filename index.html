@@ -16,11 +16,13 @@
     <meta name="author" content="iKlem">
     <!-- CSS - All stylesheets are loaded here. -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsiveslides.css">
     <link rel="stylesheet" href="user.css">
     <!-- JQUERY SCRIPTS - All Jquery script are loaded here too. -->
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/jQueryColor.js"></script>
     <script type="text/javascript" src="js/jQueryUI.js"></script>
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
   </head>
   <body>
     <div id="container">
@@ -57,6 +59,12 @@
         <h1>RULES</h1>
         <p></p>
       </div>
+    </div>
+    <!-- Yay ! The slideshow and the music plugins are here !!! More on the wiki (https://github.com/Licorne-team/GoulpLoader/wiki)-->
+    <ul class="rslides"></ul>
+    <div id="musicContainer">
+      <h3 id="musicTitle"></h3>
+      <audio loop id="musicPlayer" src=""></audio>
     </div>
     <!-- This line is where the magic happend. DO NOT TOUCH THESE LINES !!! -->
     <script type="text/javascript" src="js/script.js"></script>

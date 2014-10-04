@@ -1,11 +1,31 @@
 {
-    "server": {
-        "name": "GoulpLoader",
-        "banner": "img/banner.png"
+  "server": {
+    "name": "GoulpLoader",
+    "banner": "img/banner.png"
+  },
+  "plugins" : {
+    "slideshow" : {
+      "active" : false,
+      "speed" : 1000,
+      "time" : 5000,
+      "random" : false,
+      "image" : [
+        "http://i.ytimg.com/vi/4LRvEYsZNfY/maxresdefault.jpg",
+        "http://cloud-4.steampowered.com/ugc/510328173857488907/D3C86C34DCE410D2C4ED0C3AA06F7ED41ECF468A/",
+        "http://i.ytimg.com/vi/66_hi3AfwT0/maxresdefault.jpg"
+      ]
     },
-    "rules": [
-      {"line" : "HERE ARE ALL THE RULES YOU WANT TO SHOW FOR YOUR USERS."},
-      {"line" : "THERE IS A LIMIT OF 8 LINES."},
-      {"line" : "DON'T USE THE <b>&lt;br&gt;</b> TAG TO JUMP LINES. IT WILL BE AUTOMATIC !!!"}
-    ]
+    "music" : {
+      "active" : false,
+      "file" : "song.wav",
+      "volume" : 0.1,
+      "title" : "♫ Tommi Salomaa - Rock Runners Soundtrack - Main Theme ♫"
+    }
+  },
+  "rules": [
+    {"line" : "HERE ARE ALL THE RULES YOU WANT TO SHOW FOR YOUR USERS."},
+    {"line" : "THERE IS A LIMIT OF 8 LINES."},
+    {"line" : "DON'T USE THE <b>&lt;br&gt;</b> TAG TO JUMP LINES. IT WILL BE AUTOMATIC !!!"}
+  ],
+  "css" : "Coming soon :D"
 }

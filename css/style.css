@@ -27,6 +27,12 @@ body {
 #noBorder {
   border:0px;
 }
+#versionNo {
+  position: relative;
+  text-align: left;
+  left: 5px;
+  bottom: 20px;
+}
 /* --- */
 
 /* PROGRESS BARS */

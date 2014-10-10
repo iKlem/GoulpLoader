@@ -4,7 +4,7 @@
 GoulpLoader is a Garry's Mod loading screen.
 
 ---
-## Current version: 1.0.7
+## Current version: 1.0.7.1
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)
 ## [Demonstration](http://iklem.livehost.fr/goulploader-demo/)
 

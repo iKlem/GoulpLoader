@@ -3,6 +3,8 @@
 
 GoulpLoader is a Garry's Mod loading screen.
 
+### This loader is under [CC License](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 ---
 ## Current version: 1.0.7.1
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)

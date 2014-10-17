@@ -5,6 +5,8 @@
 
 This loader is under [CC License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more informations)
 
+Do you want to discuss about it ? Go on the [Facepunch thread](http://facepunch.com/showthread.php?t=1417046)
+
 ---
 ## Current version: 1.0.7.1
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)

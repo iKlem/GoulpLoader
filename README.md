@@ -1,5 +1,6 @@
 # GoulpLoader
 ## Garry's mod script loader
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Multigaming-community/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### GoulpLoader is a Garry's Mod loading screen.
 

@@ -17,9 +17,9 @@
     },
     "music" : {
       "active" : false,
-      "file" : "song.wav",
+      "file" : "songByDefault.wav",
       "volume" : 0.1,
-      "title" : "♫ Tommi Salomaa - Rock Runners Soundtrack - Main Theme ♫"
+      "title" : "A song by default with no voice"
     }
   },
   "rules": [

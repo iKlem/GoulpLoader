@@ -11,7 +11,7 @@ Do you want to discuss about it ? Go on the [Facepunch thread](http://facepunch.
 Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6)
 
 ---
-## Current version: 1.0.7.1
+## Current version: 1.0.8
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)
 ## [Demonstration](http://iklem.livehost.fr/goulploader-demo/)
 
@@ -25,9 +25,10 @@ Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr
 * Custom background and colors.
 * Loading bar.
 * Animated.
-* __NEW__ Slideshow !
-* __NEW__ Music Player !
-* __NEW__ New easy way to configure the loader - With JSON !
+* Slideshow !
+* Music Player !
+* Easy way to configure the loader - With JSON !
+* __NEW__ All images are SVG (See Image modification Wiki to modify colors of the svgs)
 * Use of [JQuery](http://jquery.com/), [Jquery UI](http://jqueryui.com/), [Jquery Color](https://github.com/jquery/jquery-color) and [ResponsiveSlides](http://responsiveslides.com/) plugins
 
 

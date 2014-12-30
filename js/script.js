@@ -3,7 +3,7 @@
 *  This file is important for the script to work.
 *
 *  @author: iKlem <iklem.d@gmail.com>
-*  @version: 1.1
+*  @version: 1.1.1
 */
 
 //Number of files to download
@@ -26,7 +26,8 @@ var isAnimate = false;
 
 
 /* IMAGE SVG */
-var dlFile = "<svg class='dlImg' xmlns='http://www.w3.org/2000/svg' width='90px' height='90px' viewBox='0 0 128 128'><path id='dlSVG' fill='black' stroke='black' stroke-width='1' d='M 110.00,116.00 C 110.00,116.00 110.00,124.00 110.00,124.00 110.00,124.00 20.00,124.00 20.00,124.00 20.00,124.00 20.00,116.00 20.00,116.00 20.00,116.00 110.00,116.00 110.00,116.00 Z M 83.00,3.00 C 83.00,3.00 83.00,65.00 83.00,65.00 83.00,65.00 110.00,65.00 110.00,65.00 110.00,65.00 97.63,78.88 97.63,78.88 97.63,78.88 76.63,99.88 76.63,99.88 76.63,99.88 64.88,111.13 64.88,111.13 64.88,111.13 53.13,99.63 53.13,99.63 53.13,99.63 32.38,79.00 32.38,79.00 32.38,79.00 20.00,65.00 20.00,65.00 20.00,65.00 47.00,65.00 47.00,65.00 47.00,65.00 47.00,3.00 47.00,3.00 47.00,3.00 83.00,3.00 83.00,3.00 Z' /></svg>"
+var dlFile = "./img/dl.svg"
+var theGear = "./img/gear.svg"
 
 /* DEBUG VALUES */
 /* --- */
@@ -77,7 +78,7 @@ function DownloadingFile(fileName) {
   $("#loadBar-width").css({"visibility": "visible"});
   isDownload = true;
   $("#stateLoad").html("Downloading " + fileName);
-  $("#imgLoad").html(dlFile);
+  $("#noBorder").attr("src", dlFile);
   $("#noBorder").attr("class", "NOPE");
   var splitSTR = fileName.split(" ");
   for (var i = 0; i<splitSTR.length; i++) {
@@ -104,7 +105,7 @@ function SetStatusChanged(status) {
     }
   }
   $("#stateLoad").html(status);
-  $("#noBorder").attr("src", "./img/gear.png");
+  $("#noBorder").attr("src", theGear);
   $("#noBorder").attr("class", "walk");
   RefreshFileBox();
 }

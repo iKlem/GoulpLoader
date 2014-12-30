@@ -1,0 +1,13 @@
+<!-- DL SVG - Modified & cleanup by iKlem -Downloaded on http://www.flaticon.com/free-icon/download-button_60721 -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  style="pointer-events: none; display: block;">
+  <!-- Change the "fill" color and stroke/stroke-width here - Same color as header for this version -->
+  <path
+    fill="#045FB4"
+    stroke="none"
+    stroke-width="1"
+    d="M19,9h-4V3H9v6H5l7,7L19,9z M5,18v2h14v-2H5z">
+  </path>
+</svg>

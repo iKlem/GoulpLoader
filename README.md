@@ -1,15 +1,15 @@
 # GoulpLoader
 ## Garry's mod script loader
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iKlem/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 ### GoulpLoader is a Garry's Mod loading screen.
 
 This loader is under [CC License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more informations)
 
 Do you want to discuss about it ? Go on the [Facepunch thread](http://facepunch.com/showthread.php?t=1417046)
 
-Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6)
+Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6)  
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iKlem/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
 ## Current version: 1.0.8

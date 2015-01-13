@@ -1,6 +1,8 @@
 # GoulpLoader
 ## Garry's mod script loader
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iKlem/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### GoulpLoader is a Garry's Mod loading screen.
 
 This loader is under [CC License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more informations)

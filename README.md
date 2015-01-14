@@ -14,7 +14,7 @@ Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr
 ---
 ## Current version: 1.0.8
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)
-## [Demonstration](http://iklem.livehost.fr/goulploader-demo/)
+### Demonstration link has to be moved due to pub from web hoster
 
 
 ---

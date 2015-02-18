@@ -3,15 +3,17 @@
 *  This file is important for the script to work.
 *
 *  @author: iKlem <iklem.d@gmail.com>
-*  @version: 1.1.1
+*  @version: 1.2
 */
 
-//Number of files to download
-var filesNeeded = 0;
+//Number of files to download + counter of file remaining
+var filesNeeded = filesRemaining = 0;
 //Number of total files
 var filesTotal = 0;
 //Number of files already downloaded or in download
 var filesDL = 0;
+//Number of workshops files checked
+var filesChecked = 0;
 //Boolean value to know if you're in a download
 var isDownload = false;
 //Percentage of the progress bar
@@ -24,6 +26,9 @@ value = 0;
 var animationFunction;
 var isAnimate = false;
 
+//Array of gamemodes names, shorts name will be changed into his "Title"
+var gamemodesShorts = ["terrortown", "prophunt", "elevator", "murder", "cinema"];
+var gamemodesTitle = ["Trouble in Terrorist Town", "Prop Hunt", "Elevator: Source", "Murder", "Cinema"];
 
 /* IMAGE SVG */
 var dlFile = "./img/dl.svg"
@@ -34,8 +39,13 @@ var theGear = "./img/gear.svg"
 
 //Update of all elements in the page
 function RefreshFileBox() {
-  if(percentage < 100 || (filesDL == filesNeeded)) {
-    percentage = Math.floor((100 / filesNeeded) * filesDL);
+  if(percentage < 100 || ((filesDL + filesChecked) == filesNeeded)) {
+    percentage = Math.floor((100 / filesNeeded) * (filesDL + filesChecked));
+    //$("#rules p").append(" P:"+percentage);
+  }
+
+  if(filesRemaining < 0) {
+    filesRemaining = 0;
   }
 
   if(isAnimate) {
@@ -45,13 +55,11 @@ function RefreshFileBox() {
   }
 
   if(filesNeeded > 0) {
-    if(percentage == 100 || (filesDL == filesNeeded)) {
+    if(percentage == 100 || ((filesDL + filesChecked) == filesNeeded)) {
       $("#progressInfoWS").html("Done !");
-      $("#progressInfo").html("Files downloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
-    } else {
-      $("#progressInfo").html("Files downloaded : " + filesDL + "<br>Files remaining : " + filesNeeded);
     }
   }
+  $("#progressInfo").html("Files downloaded : " + filesDL + " | Files checked : " + filesChecked + "<br>Files to download/check : " + filesRemaining);
 }
 //Animation when page is loaded.
 $("body").ready(function() {
@@ -59,7 +67,8 @@ $("body").ready(function() {
 });
 // Called when the number of files to download changes.
 function SetFilesNeeded(needed) {
-  filesNeeded = needed;
+  if(filesNeeded == 0)
+    filesNeeded = filesRemaining = needed;
   RefreshFileBox();
 }
 // Called at the start, tells us how many files need to be downloaded in total.
@@ -72,10 +81,11 @@ function SetFilesTotal(total) {
 function DownloadingFile(fileName) {
   if(isDownload) {
     filesDL++;
+    filesRemaining--;
     isDownload = false;
     isAnimate = true;
   }
-  $("#loadBar-width").css({"visibility": "visible"});
+  $("#rules p").append(" DL ");
   isDownload = true;
   $("#stateLoad").html("Downloading " + fileName);
   $("#noBorder").attr("src", dlFile);
@@ -83,6 +93,7 @@ function DownloadingFile(fileName) {
   var splitSTR = fileName.split(" ");
   for (var i = 0; i<splitSTR.length; i++) {
     if(splitSTR[i] == "Workshop") {
+      $("#rules p").append(" WS ");
       $("#progressInfoWS").html("Download addon from Workshop...");
     } else {
       $("#progressInfoWS").html(" - - - ");
@@ -92,18 +103,30 @@ function DownloadingFile(fileName) {
 }
 // Called when something happens. This might be "Initialising Game Data", "Sending Client Info", etc.
 function SetStatusChanged(status) {
-  if(isDownload) {
-    filesDL++;
-    isDownload = false;
-    isAnimate = true;
-  }
   var statusSTR = status.split(" ");
   for (var i = 0; i < statusSTR.length; i++) {
     if(statusSTR[i] == "Sending") {
       percentage = 100;
       setTimeout(function() { animateFinal(); $("#serverInfo").html("<div id='status'>" + status + "<br><div id='spinner'></div></div>"); }, 1000);
+    } else if(statusSTR[i] == "Found") {
+      filesChecked++;
+      filesRemaining--;
+      isAnimate= true;
+    } else if(statusSTR[i] == "Extracting" || statusSTR[i] == "Extracted") {
+      $("#rules p").append(" EX ");
+      isDownload = false;
     }
   }
+
+  if(isDownload) {
+    filesDL++;
+    filesRemaining--;
+    isDownload = false;
+    isAnimate = true;
+    $("#rules p").append(" DLSSC ");
+  }
+
+  $("#rules p").append(status + " ");
   $("#stateLoad").html(status);
   $("#noBorder").attr("src", theGear);
   $("#noBorder").attr("class", "walk");
@@ -112,7 +135,15 @@ function SetStatusChanged(status) {
 // Called when the loading screen finishes loading all assets.
 function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemode) {
   $("#servName").html(servername);
-  $("#gameMode").html(gamemode);
+  for(index = 0; index < gamemodesShorts.length; index++) {
+    if(gamemode == gamemodesShorts[index]) {
+      $("#gameMode").html(gamemodesTitle[index]);
+      $("#imgLeft").attr("src", "img/gamemodesIcons/" + gamemode + ".svg");
+      break;
+    } else {
+      $("#gameMode").html(gamemode);
+    }
+  }
   $("#map").html(mapname);
   $("#serverBanner img").attr("alt", servername + " - IMAGE MISSING");
 }
@@ -120,7 +151,7 @@ function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemo
 function animationBar() {
   if(percentage > value) {
     value += 1;
-    progressbar.width(value+"%");
+    progressbar.css({"width":value+"%", "visibility":"visible"});
   } else if (percentage == 100) {
     $("#loadBar-width").animate({backgroundColor:"green"}, 500, "easeOutExpo");
   }
@@ -135,3 +166,8 @@ function animateFinal() {
   });
   clearInterval(animationFunction);
 }
+
+//THESE LINES ARE REMOVED FROM CONFIG.JSON FOR DEBUG PURPOSE
+//{"line" : "HERE ARE ALL THE RULES YOU WANT TO SHOW FOR YOUR USERS."},
+//{"line" : "THERE IS A LIMIT OF 8 LINES."},
+//{"line" : "DON'T USE THE <b>&lt;br&gt;</b> TAG TO JUMP LINES. IT WILL BE AUTOMATIC !!!"}

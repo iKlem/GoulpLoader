@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- SVG image created by iKlem with GIMP -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="0.444389in" height="0.444389in"
+     viewBox="0 0 32 32">
+  <path id="arrowUp"
+        fill="white" stroke="black" stroke-width="1"
+        d="M 18.00,8.00
+           C 18.00,8.00 9.00,22.00 9.00,22.00
+             9.00,22.00 1.00,8.00 1.00,8.00
+             1.00,8.00 18.00,8.00 18.00,8.00 Z" />
+  <path id="arrowDown"
+        fill="white" stroke="black" stroke-width="1"
+        d="M 29.00,23.00
+          C 29.00,23.00 15.00,23.00 15.00,23.00
+            15.00,23.00 22.00,9.01 22.00,9.01
+            22.00,9.01 29.00,23.00 29.00,23.00 Z" />
+</svg>

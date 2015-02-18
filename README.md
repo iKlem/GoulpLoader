@@ -12,7 +12,7 @@ Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iKlem/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
-## Current version: 1.0.8
+## Current version: 1.1
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)
 ### Demonstration link has to be moved due to pub from web hoster
 
@@ -29,7 +29,8 @@ Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr
 * Slideshow !
 * Music Player !
 * Easy way to configure the loader - With JSON !
-* __NEW__ All images are SVG (See Image modification Wiki to modify colors of the svgs)
+* All images are SVG (See Image modification Wiki to modify colors of the svgs)
+* __NEW__ Show real names of gamemodes with icons !
 * Use of [JQuery](http://jquery.com/), [Jquery UI](http://jqueryui.com/), [Jquery Color](https://github.com/jquery/jquery-color) and [ResponsiveSlides](http://responsiveslides.com/) plugins
 
 

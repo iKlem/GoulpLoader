@@ -3,7 +3,7 @@
 *  This file is important for the script to work.
 *
 *  @author: iKlem <iklem.d@gmail.com>
-*  @version: 1.2
+*  @version: 1.2.1
 */
 
 //Number of files to download + counter of file remaining
@@ -27,7 +27,7 @@ var animationFunction;
 var isAnimate = false;
 
 //Array of gamemodes names, shorts name will be changed into his "Title"
-var gamemodesShorts = ["terrortown", "prophunt", "elevator", "murder", "cinema"];
+var gamemodesShorts = ["terrortown", "prop_hunt", "elevator", "murder", "cinema"];
 var gamemodesTitle = ["Trouble in Terrorist Town", "Prop Hunt", "Elevator: Source", "Murder", "Cinema"];
 
 /* IMAGE SVG */
@@ -41,7 +41,6 @@ var theGear = "./img/gear.svg"
 function RefreshFileBox() {
   if(percentage < 100 || ((filesDL + filesChecked) == filesNeeded)) {
     percentage = Math.floor((100 / filesNeeded) * (filesDL + filesChecked));
-    //$("#rules p").append(" P:"+percentage);
   }
 
   if(filesRemaining < 0) {
@@ -85,7 +84,6 @@ function DownloadingFile(fileName) {
     isDownload = false;
     isAnimate = true;
   }
-  $("#rules p").append(" DL ");
   isDownload = true;
   $("#stateLoad").html("Downloading " + fileName);
   $("#noBorder").attr("src", dlFile);
@@ -93,7 +91,6 @@ function DownloadingFile(fileName) {
   var splitSTR = fileName.split(" ");
   for (var i = 0; i<splitSTR.length; i++) {
     if(splitSTR[i] == "Workshop") {
-      $("#rules p").append(" WS ");
       $("#progressInfoWS").html("Download addon from Workshop...");
     } else {
       $("#progressInfoWS").html(" - - - ");
@@ -113,7 +110,6 @@ function SetStatusChanged(status) {
       filesRemaining--;
       isAnimate= true;
     } else if(statusSTR[i] == "Extracting" || statusSTR[i] == "Extracted") {
-      $("#rules p").append(" EX ");
       isDownload = false;
     }
   }
@@ -123,10 +119,8 @@ function SetStatusChanged(status) {
     filesRemaining--;
     isDownload = false;
     isAnimate = true;
-    $("#rules p").append(" DLSSC ");
   }
 
-  $("#rules p").append(status + " ");
   $("#stateLoad").html(status);
   $("#noBorder").attr("src", theGear);
   $("#noBorder").attr("class", "walk");
@@ -166,8 +160,3 @@ function animateFinal() {
   });
   clearInterval(animationFunction);
 }
-
-//THESE LINES ARE REMOVED FROM CONFIG.JSON FOR DEBUG PURPOSE
-//{"line" : "HERE ARE ALL THE RULES YOU WANT TO SHOW FOR YOUR USERS."},
-//{"line" : "THERE IS A LIMIT OF 8 LINES."},
-//{"line" : "DON'T USE THE <b>&lt;br&gt;</b> TAG TO JUMP LINES. IT WILL BE AUTOMATIC !!!"}

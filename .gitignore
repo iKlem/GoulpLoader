@@ -1,3 +1,16 @@
+# Music files
 *.wav
 *.mp3
 *.ogg
+
+# Folder config file
+Desktop.ini
+
+# OS generated files/caches
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

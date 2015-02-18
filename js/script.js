@@ -1,16 +1,16 @@
 /*
-*  DO NOT MODIFY THIS FILE UNLESS IF YOU KNOW WHAT ARE YOU DOING !!!
+*  DON'T MODIFY THIS FILE UNLESS YOU KNOW WHAT YOU ARE DOING!
 *  This file is important for the script to work.
 *
 *  @author: iKlem <iklem.d@gmail.com>
 *  @version: 1.2.1
 */
 
-//Number of files to download + counter of file remaining
+//Number of files to download and counter of files remaining
 var filesNeeded = filesRemaining = 0;
 //Number of total files
 var filesTotal = 0;
-//Number of files already downloaded or in download
+//Number of files already downloaded or currently in download
 var filesDL = 0;
 //Number of workshops files checked
 var filesChecked = 0;
@@ -22,15 +22,15 @@ var percentage = 0;
 var progressbar = $('#loadBar-width'),
 max = percentage,
 value = 0;
-//Value for the interval clearing function.
+//Value for the interval clearing function
 var animationFunction;
 var isAnimate = false;
 
-//Array of gamemodes names, shorts name will be changed into his "Title"
+//Array of gamemodes names, "shorts" names will be changed into respective "Title" names.
 var gamemodesShorts = ["terrortown", "prop_hunt", "elevator", "murder", "cinema"];
 var gamemodesTitle = ["Trouble in Terrorist Town", "Prop Hunt", "Elevator: Source", "Murder", "Cinema"];
 
-/* IMAGE SVG */
+/* IMAGE SVGs */
 var dlFile = "./img/dl.svg"
 var theGear = "./img/gear.svg"
 
@@ -98,7 +98,7 @@ function DownloadingFile(fileName) {
   }
   RefreshFileBox();
 }
-// Called when something happens. This might be "Initialising Game Data", "Sending Client Info", etc.
+// Called when the load status changes. This might be "Initializing Game Data", "Sending Client Info", etc.
 function SetStatusChanged(status) {
   var statusSTR = status.split(" ");
   for (var i = 0; i < statusSTR.length; i++) {
@@ -141,7 +141,7 @@ function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemo
   $("#map").html(mapname);
   $("#serverBanner img").attr("alt", servername + " - IMAGE MISSING");
 }
-// Animate the progress of the Progress bar.
+// Animate the progress of the progress bar.
 function animationBar() {
   if(percentage > value) {
     value += 1;
@@ -150,7 +150,7 @@ function animationBar() {
     $("#loadBar-width").animate({backgroundColor:"green"}, 500, "easeOutExpo");
   }
 }
-//Animate the panels when the message "Sending Clien Info" is sended.
+// Animate the panels when the message "Sending Client Info" is sent.
 function animateFinal() {
   $("#leftPanel").animate({left:"-55%"}, 500, "easeOutExpo");
   $("#rules").animate({left:"175%"}, 500, "easeOutExpo");

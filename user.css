@@ -3,28 +3,28 @@
 *  @version: 1.1
 */
 
-/* Change the background image and color. */
+/* Background image and color. */
 body {
     background: #CCCCCC url("img/bg.png");
 }
 
-/* Change the background color of the left panel */
+/* Background color of the left panel. */
 header {
     background: #FFFFFF;
 }
 
-/* Change the backgrounds color of the title "SERVER NAME" and "RULES" */
+/* Color/background color of the titles "SERVER NAME" and "RULES" */
 h1, #player {
     color: white;
     background-color: #045FB4;
 }
 
-/* Change the background color of the back bar */
+/* Background color of the progress bar. */
 #loadBar {
     background-color: #939393;
 }
 
-/* Change the background color of the bar*/
+/* Color of the filled part of the progress bar. */
 #loadBar-width {
     background-color: black;
 }

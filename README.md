@@ -1,63 +1,63 @@
 # GoulpLoader
-## Garry's mod script loader
+## Garry's Mod loading screen script.
 
-### GoulpLoader is a Garry's Mod loading screen.
+### GoulpLoader is a loading screen for the popular sandbox game [Garry's Mod](http://www.garrysmod.com/).
 
-This loader is under [CC License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more informations)
+This loader is licensed under the [CC BY-NC 4.0 License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more information)
 
-Do you want to discuss about it ? Go on the [Facepunch thread](http://facepunch.com/showthread.php?t=1417046)
+If you would like to discuss the loader, please visit the [Facepunch thread](http://facepunch.com/showthread.php?t=1417046).
 
-Do you want to do a donation ? [It's here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6)  
+If you would like to donate to support the developer, please click this [PayPal link](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6).
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iKlem/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
 ## Current version: 1.1
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)
-### Demonstration link has to be moved due to pub from web hoster
+## [View Demo](http://zorf.me/s/goulploader/)
 
 
 ---
 ## Features
-* Server informations with gamemode, maps and the name.
+* Server information with gamemode, maps, and the name.
 * Show all actions and files to be or downloaded.
-* Panel for your rules.
-* Add your Server Banner (See Server Banner Wiki to add your banner | !!! UNDER CONSTRUCTION !!!)
+* Rules/custom text panel.
+* Add your Server Banner (See "Install the Loader" wiki page for tutorial. (UNDER CONSTRUCTION!))
 * Custom background and colors.
 * Loading bar.
 * Animated.
-* Slideshow !
-* Music Player !
-* Easy way to configure the loader - With JSON !
-* All images are SVG (See Image modification Wiki to modify colors of the svgs)
-* __NEW__ Show real names of gamemodes with icons !
-* Use of [JQuery](http://jquery.com/), [Jquery UI](http://jqueryui.com/), [Jquery Color](https://github.com/jquery/jquery-color) and [ResponsiveSlides](http://responsiveslides.com/) plugins
+* Optional Slideshow!
+* Optional Music Player!
+* Easy to configure the loader with JSON!
+* All images are SVG (See "Image Modification" wiki page to modify colors of the SVGs)
+* __NEW__! Show fancy names of gamemodes along with icons for them!
+* Use of [jQuery](http://jquery.com/), [jQuery UI](http://jqueryui.com/), [jQuery Color](https://github.com/jquery/jquery-color) and [ResponsiveSlides.js](http://responsiveslides.com/) plugins.
 
 
 ---
-## Installation (Or go see the [Wiki](https://github.com/Licorne-team/GoulpLoader/wiki))
-* Add all theses files in a webserver.
-* In your Garry's mod server, go to your cfg folder, and open "server.cfg"
-* Add this line `sv_loadingurl "http://yourwebserver.something/if_you_have_put_a_folder"`
-* Restart your GMod server and voila !
+## Installation (Or view the [wiki page](https://github.com/iKlem/GoulpLoader/wiki))
+* Add all these files to your webserver.
+* In your Garry's Mod server, go to your cfg folder, and edit "server.cfg"
+* Add this line `sv_loadingurl "http://yourwebserver.something/folder_if_you_have_one"`
+* Restart your GMod server and voila!
 
 ---
-## Other informations
-* No PHP needed ! Just a simple Web hosting can do the job.
-* You have to know some base of the HTML, CSS, Javascript and JQuery languages if you want to modify all the files. (Some commment are in the files to help you to configure the files).
-* If you have problems to use the loading screen, you can send an issue, or send me an email to `iklem.d@gmail.com`
-* The wiki will be modified in the time, so if you think your problem can be in the wiki, wait a moment, or send a issue.
+## Other Information
+* No PHP needed! Just simple web hosting can do the job.
+* You have to know some basics of the HTML, CSS, JavaScript and jQuery languages if you want to modify all the files. (Some commments are in the files to help you configure them).
+* If you have problems using the loading screen, you can post an issue here or send an email to [iklem.d@gmail.com](sendto:iklem.d@gmail.com)
+* The wiki will be modified in time, so if you think your problem may be in the wiki, wait a moment or send a issue.
 * All other information can be found on the wiki.
-* Want to be informed about new update ? Clic on the **Watch** button at the top ;)
+* Want to be informed about new updates? Click the **Watch** button at the top. ;)
 
 ---
-## About this project
-This project was orginaly made for a private server. I recently found a **"paid"** loading screen, and I think we don't need to pay for that kind of script. All servers can have a cool and hype loading screen withouth paying it. So i made one **free**.
+## About This Project
+This project was orginally made for a private server. I recently found a **"paid"** loading screen, and I don't think we need to pay for that kind of script. All servers can have a cool and hype loading screen withouth paying for one. So I made one **free**.
 
-I'm a french guy who love to made web things free :)
+I'm a French guy who loves to make web things for free. :)
 
-You can donate me if you want to help me in my work  [here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6) ;)
+You can donate to me if you would like to support me in my work [here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6). ;)
 
-You can go on my website (under construction and french site) [here](http://iklem.livehost.fr)
+You can also visit my website (under construction and a French site) [here](http://iklem.livehost.fr).
 
-I'll promise this script will not be a **paid script**
+I promise this script will never be a **paid script**.

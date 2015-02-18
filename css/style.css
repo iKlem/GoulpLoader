@@ -1,6 +1,6 @@
 /*
 *  This stylesheet can be modified, but you have to know the css language.
-*  Main colors can be modified in the "user.css" file..
+*  Main colors can be modified in the "user.css" file.
 *
 *  @author: iKlem <iklem.d@gmail.com>
 *  @version: 1.1
@@ -134,7 +134,7 @@ h1 {
 }
 /* --- */
 
-/* RIGHT PANELS*/
+/* RIGHT PANELS */
 #rightPanel {
   float: right;
   margin: 2% 2% 2% 0px;
@@ -202,7 +202,7 @@ h1 {
 }
 /* --- */
 
-/* ANIMATION CSS*/
+/* CSS ANIMATION */
 .walk {
   -webkit-animation-name: walk;
   -webkit-animation-duration: 5.0s;

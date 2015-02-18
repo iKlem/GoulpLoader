@@ -1,6 +1,6 @@
 /*
-*  This file load the config in the "config.json" file.
-*  DON'T MODIFY THIS FILE UNLESS YOU KNOW WHAT ARE YOU DOING
+*  This file loads the config in the "config.json" file.
+*  DON'T MODIFY THIS FILE UNLESS YOU KNOW WHAT YOU ARE DOING!
 *
 *  @author: iKlem <iklem.d@gmail.com>
 *  @version: 1.0.1

@@ -1,9 +1,9 @@
 # GoulpLoader
-## Garry's mod script loader
+## Garry's Mod loading screen script.
 
-### GoulpLoader is a Garry's Mod loading screen.
+### GoulpLoader is a loading screen for the popular sandbox game [Garry's Mod](http://www.garrysmod.com/).
 
-This loader is licensed under the [CC BY-NC 4.0 License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more informations)
+This loader is licensed under the [CC BY-NC 4.0 License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more information)
 
 If you would like to discuss the loader, please visit the [Facepunch thread](http://facepunch.com/showthread.php?t=1417046).
 
@@ -19,40 +19,39 @@ If you would like to donate to support the developer, please click this [PayPal 
 
 ---
 ## Features
-* Server information with gamemode, maps and the name.
+* Server information with gamemode, maps, and the name.
 * Show all actions and files to be or downloaded.
-* Customizable!
 * Rules/custom text panel.
-* Add your Server Banner (See "Install the Loader" wiki page for tutorial; !!! UNDER CONSTRUCTION !!!)
+* Add your Server Banner (See "Install the Loader" wiki page for tutorial. (UNDER CONSTRUCTION!))
 * Custom background and colors.
 * Loading bar.
 * Animated.
 * Optional Slideshow!
 * Optional Music Player!
-* Easy way to configure the loader with JSON!
+* Easy to configure the loader with JSON!
 * All images are SVG (See "Image Modification" wiki page to modify colors of the SVGs)
 * __NEW__! Show fancy names of gamemodes along with icons for them!
 * Use of [jQuery](http://jquery.com/), [jQuery UI](http://jqueryui.com/), [jQuery Color](https://github.com/jquery/jquery-color) and [ResponsiveSlides.js](http://responsiveslides.com/) plugins.
 
 
 ---
-## Installation (Or view the [Wiki page](https://github.com/iKlem/GoulpLoader/wiki))
+## Installation (Or view the [wiki page](https://github.com/iKlem/GoulpLoader/wiki))
 * Add all these files to your webserver.
 * In your Garry's Mod server, go to your cfg folder, and edit "server.cfg"
 * Add this line `sv_loadingurl "http://yourwebserver.something/folder_if_you_have_one"`
 * Restart your GMod server and voila!
 
 ---
-## Other information
+## Other Information
 * No PHP needed! Just simple web hosting can do the job.
 * You have to know some basics of the HTML, CSS, JavaScript and jQuery languages if you want to modify all the files. (Some commments are in the files to help you configure them).
-* If you have problems using the loading screen, you can post an issue here or send an email to [`iklem.d@gmail.com`](sendto:iklem.d@gmail.com)
+* If you have problems using the loading screen, you can post an issue here or send an email to [iklem.d@gmail.com](sendto:iklem.d@gmail.com)
 * The wiki will be modified in time, so if you think your problem may be in the wiki, wait a moment or send a issue.
 * All other information can be found on the wiki.
 * Want to be informed about new updates? Click the **Watch** button at the top. ;)
 
 ---
-## About this project
+## About This Project
 This project was orginally made for a private server. I recently found a **"paid"** loading screen, and I don't think we need to pay for that kind of script. All servers can have a cool and hype loading screen withouth paying for one. So I made one **free**.
 
 I'm a French guy who loves to make web things for free. :)

@@ -22,14 +22,14 @@ If you would like to donate to support the developer, please click this [PayPal 
 * Server information with gamemode, maps, and the name.
 * Show all actions and files to be or downloaded.
 * Rules/custom text panel.
-* Add your Server Banner (See "Install the Loader" wiki page for tutorial. (UNDER CONSTRUCTION!))
+* Add your Server Banner (See "Install the Loader" wiki page for tutorial).
 * Custom background and colors.
 * Loading bar.
 * Animated.
 * Optional Slideshow!
 * Optional Music Player!
 * Easy to configure the loader with JSON!
-* All images are SVG (See "Image Modification" wiki page to modify colors of the SVGs)
+* All images are SVG (See "Image Modification" wiki page to modify colors of the SVGs).
 * __NEW__! Show fancy names of gamemodes along with icons for them!
 * Use of [jQuery](http://jquery.com/), [jQuery UI](http://jqueryui.com/), [jQuery Color](https://github.com/jquery/jquery-color) and [ResponsiveSlides.js](http://responsiveslides.com/) plugins.
 

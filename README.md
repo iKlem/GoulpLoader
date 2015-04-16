@@ -12,7 +12,7 @@ If you would like to donate to support the developer, please click this [PayPal 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iKlem/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
-## Current version: 1.1
+## Current version: 1.1.1
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)
 ## [View Demo](http://zorf.me/s/goulploader/)
 

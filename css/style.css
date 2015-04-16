@@ -3,7 +3,7 @@
 *  Main colors can be modified in the "user.css" file.
 *
 *  @author: iKlem <iklem.d@gmail.com>
-*  @version: 1.1
+*  @version: 1.1.1
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
@@ -131,6 +131,10 @@ h1 {
 #nbFiles {
   border: none;
   height: 60px;
+}
+#stateLoad {
+	font-size: 25px;
+	line-height: auto;
 }
 /* --- */
 

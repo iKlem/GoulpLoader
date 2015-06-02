@@ -85,17 +85,21 @@ function DownloadingFile(fileName) {
     isAnimate = true;
   }
   isDownload = true;
-  $("#stateLoad").html("Downloading " + fileName);
-  $("#noBorder").attr("src", dlFile);
-  $("#noBorder").attr("class", "NOPE");
   var splitSTR = fileName.split(" ");
   for (var i = 0; i<splitSTR.length; i++) {
     if(splitSTR[i] == "Workshop") {
       $("#progressInfoWS").html("Download addon from Workshop...");
     } else {
+      if(fileName.length > 30) {
+        splittedName = fileName.split("/");
+        fileName = splittedName[1] + "/.../" + splittedName[splittedName.length - 1];
+      }
       $("#progressInfoWS").html(" - - - ");
     }
   }
+  $("#stateLoad").html("Downloading <br>" + fileName);
+  $("#noBorder").attr("src", dlFile);
+  $("#noBorder").attr("class", "NOPE");
   RefreshFileBox();
 }
 // Called when the load status changes. This might be "Initializing Game Data", "Sending Client Info", etc.

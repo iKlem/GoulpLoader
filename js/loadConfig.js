@@ -6,7 +6,7 @@
 *  @version: 1.0.1
 */
 
-$.getJSON('./config.json', function (data) {
+$.getJSON('config.json', function (data) {
   $("title").append(data.server.name);
   $("#serverBanner img").attr("src", data.server.banner);
   $("#serverBanner img").attr("alt", data.server.banner);
@@ -44,4 +44,6 @@ $.getJSON('./config.json', function (data) {
     timeout: slideshow.time,
     random: slideshow.random
   });
+}).fail(function(jqxhr, textStatus, error) {
+	console.log("ERROR", jqxhr, textStatus, error);
 });

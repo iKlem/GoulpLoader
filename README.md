@@ -5,16 +5,12 @@
 
 This loader is licensed under the [CC BY-NC 4.0 License](http://creativecommons.org/licenses/by-nc/4.0/) (See LICENSE for more information)
 
-If you would like to discuss the loader, please visit the [Facepunch thread](http://facepunch.com/showthread.php?t=1417046).
-
 If you would like to donate to support the developer, please click this [PayPal link](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6).
-
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iKlem/GoulpLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
 ## Current version: 1.1.1
 ## [Download Latest](https://github.com/Multigaming-community/GoulpLoader/releases/latest)
-## [View Demo](http://zorf.me/s/goulploader/)
+## No Demo (Todo: upload project for demo)
 
 
 ---
@@ -58,6 +54,6 @@ I'm a French guy who loves to make web things for free. :)
 
 You can donate to me if you would like to support me in my work [here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAAU3DKXJXFR6). ;)
 
-You can also visit my website (under construction and a French site) [here](http://iklem.livehost.fr).
+You can also visit my website (under construction and a French site) [here](http://iklem.fr).
 
 I promise this script will never be a **paid script**.
